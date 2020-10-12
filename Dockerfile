@@ -6,7 +6,7 @@ ENV KUBE_LATEST_VERSION="v1.19.0"
 ENV HOME=/config
 
 RUN apk update && apk upgrade \
- && apk add bash jq \
+ && apk add bash jq gettext \
  && apk add --update ca-certificates \
  && apk add --update -t deps curl \
  && curl -L https://storage.googleapis.com/kubernetes-release/release/${KUBE_LATEST_VERSION}/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl \
