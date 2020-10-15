@@ -9,7 +9,6 @@ RUN apk update && apk upgrade \
  && apk add bash jq gettext libintl \
  && apk add --update ca-certificates \
  && apk add --update -t deps curl \
- && mv /usr/bin/envsubst /usr/local/sbin/envsubst \
  && curl -L https://storage.googleapis.com/kubernetes-release/release/${KUBE_LATEST_VERSION}/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl \
  && chmod +x /usr/local/bin/kubectl \
  && apk del --purge deps \
