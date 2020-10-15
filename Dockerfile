@@ -2,7 +2,7 @@ FROM alpine:3.6
 
 LABEL MAINTAINER digital.innovation@infinitus-int.com
 
-ENV KUBE_LATEST_VERSION="v1.19.0"
+ENV KUBE_LATEST_VERSION="v1.19.3"
 ENV HOME=/config
 
 RUN apk update && apk upgrade \
